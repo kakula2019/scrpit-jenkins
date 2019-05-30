@@ -3,6 +3,7 @@
   <groupId>scrpit-jenkins</groupId>
   <artifactId>scrpit-jenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
     <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -10,7 +11,14 @@
 
     <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
   </properties>
-
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
+ <dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-install-plugin</artifactId>
+    <version>3.0.0-M1</version>
+</dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
